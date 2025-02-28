@@ -22,7 +22,7 @@ export const FAQs = () => {
 
   return (
     <Box sx={{ p: 4 }}>
-      <Box sx={{ maxWidth: "1200px", margin: "0 auto" }}> {/* Center the content with margins on both sides */}
+      <Box sx={{ maxWidth: "1200px", margin: "0 auto" }}> 
         <Grid 
           container 
           spacing={4} 
@@ -34,7 +34,7 @@ export const FAQs = () => {
           <Grid item xs={12} md={5} sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <Button 
               variant="contained" 
-              sx={{ background: "#D4D5DF", color: "#010156", mb: 2, textTransform: "capitalize" }}
+              sx={{ background: "#D4D5DF", color: "#010156", mb: 2, textTransform: "capitalize", borderRadius: "50px", width:"50%" }}
             >
               <img 
                 src={require("../../assets/images/icons/message-question.png")} 
