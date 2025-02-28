@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { FAQs } from "../components/Home/FAQs";
 import { AboutSection } from "../components/Home/About";
 import { ServiceCards } from "../components/Home/ServiceCards"
@@ -8,13 +9,19 @@ import { Footer } from "../navigation/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <Box>
       <ServiceCards />
-      <FAQs />
-      <AboutSection />
-      <PreFooter />
+      <Box marginTop="30px">
+        <FAQs />
+      </Box>
+      <Box marginTop="30px">
+        <AboutSection />
+      </Box>
+      <Box marginTop="30px">
+        <PreFooter />
+      </Box>
       <Footer />
-    </div>
+    </Box>
   )
 }
 

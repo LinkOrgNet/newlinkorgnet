@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const ServiceCards: React.FC = () => {
   return (
-    <Box sx={{ padding: 4, border: "2px dashed #3f9bff", borderRadius: "8px" }}>
+    <Box sx={{ padding: 4, borderRadius: "8px"}}>
       {/* Highspeed Internet */}
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6}>

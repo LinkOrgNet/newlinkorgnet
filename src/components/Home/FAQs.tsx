@@ -22,61 +22,77 @@ export const FAQs = () => {
 
   return (
     <Box sx={{ p: 4 }}>
-      <Grid container spacing={4} alignItems="center" ml={4}>
-        {/* Left Section */}
-        <Grid item xs={12} md={5}>
-          <Button variant="contained" sx={{ background: "#D4D5DF", color: "#010156", mb: 2, textTransform: "capitalize"}}>
-            <img 
-              src={require("../../assets/images/icons/message-question.png")} 
-              alt="message question"
-              width="7%"
-            /> 
-            &nbsp;Frequently Asked Questions
-          </Button>
-          <Typography variant="h4" sx={{ fontWeight: "semibold", color: "#E65D0F" }}>
-            We answered your <span style={{ color: "#010156" }}>questions</span> so you don’t even have to ask!
-          </Typography>
-          <Button variant="text" sx={{ mt: 2, color: "#0047AB", textTransform: "none" }}>
-            Get specific answers about our services →
-          </Button>
-          {/* Motion-enhanced SVG icon */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <QuestionsIcon width="100%" style={{ maxWidth: "240px", marginTop: "-3%" }} />
-          </motion.div>
-        </Grid>
-
-        {/* Right Section */}
-        <Grid item xs={12} md={6} sx={{ marginTop: "-7%", marginRight: "5%" }}>
-          {faqData.map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
+      <Box sx={{ maxWidth: "1200px", margin: "0 auto" }}> {/* Center the content with margins on both sides */}
+        <Grid 
+          container 
+          spacing={4} 
+          alignItems="stretch" 
+          justifyContent="space-between" 
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 4 }}
+        >
+          {/* Left Section */}
+          <Grid item xs={12} md={5} sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <Button 
+              variant="contained" 
+              sx={{ background: "#D4D5DF", color: "#010156", mb: 2, textTransform: "capitalize" }}
             >
-              <Accordion 
-                expanded={expanded === `panel${index}`} 
-                onChange={handleChange(`panel${index}`)} 
-                sx={{ minHeight: "75px", backgroundColor: "#F9F9FC", width: "90%" }}
-              >
-                <AccordionSummary 
-                  expandIcon={<img src={PlusIcon} alt="expand" width="20px" />} 
-                  sx={{ minHeight: "75px", display: "flex", alignItems: "center" }}
-                >
-                  <Typography sx={{ color: "#010156" }}>{item.question}</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <Typography sx={{ color: "#010156" }}>{item.answer}</Typography>
-                </AccordionDetails>
-              </Accordion>
+              <img 
+                src={require("../../assets/images/icons/message-question.png")} 
+                alt="message question"
+                width="7%"
+              /> 
+              &nbsp;Frequently Asked Questions
+            </Button>
+            <Typography variant="h4" sx={{ fontWeight: "semibold", color: "#E65D0F" }}>
+              We answered your <span style={{ color: "#010156" }}>questions</span> so you don’t even have to ask!
+            </Typography>
+            <Button variant="text" sx={{ mt: 2, color: "#0047AB", textTransform: "none" }}>
+              Get specific answers about our services →
+            </Button>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <QuestionsIcon width="100%" style={{ maxWidth: "240px" }} />
             </motion.div>
-          ))}
+          </Grid>
+
+          {/* Right Section */}
+          <Grid 
+            item 
+            xs={12} 
+            md={6} 
+            sx={{ display: "flex", flexDirection: "column", justifyContent: "center" }}
+          >
+            {faqData.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                style={{ width: "100%" }}
+              >
+                <Accordion 
+                  expanded={expanded === `panel${index}`} 
+                  onChange={handleChange(`panel${index}`)} 
+                  sx={{ minHeight: "75px", backgroundColor: "#F9F9FC", width: "100%" }}
+                >
+                  <AccordionSummary 
+                    expandIcon={<img src={PlusIcon} alt="expand" width="20px" />} 
+                    sx={{ minHeight: "75px", display: "flex", alignItems: "center" }}
+                  >
+                    <Typography sx={{ color: "#010156" }}>{item.question}</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <Typography sx={{ color: "#010156" }}>{item.answer}</Typography>
+                  </AccordionDetails>
+                </Accordion>
+              </motion.div>
+            ))}
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
     </Box>
   );
 };
