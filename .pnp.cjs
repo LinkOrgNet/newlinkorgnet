@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@emotion/react", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:11.14.0"],\
           ["@emotion/styled", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:11.14.0"],\
           ["@fontsource/roboto", "npm:5.1.1"],\
+          ["@mui/icons-material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/styled-engine-sc", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/system", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
@@ -5331,6 +5332,33 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@mui-core-downloads-tracker-npm-6.4.6-0f0ea7e259-10c0.zip/node_modules/@mui/core-downloads-tracker/",\
         "packageDependencies": [\
           ["@mui/core-downloads-tracker", "npm:6.4.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@mui/icons-material", [\
+      ["npm:6.4.6", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@mui-icons-material-npm-6.4.6-c9b1a70b45-10c0.zip/node_modules/@mui/icons-material/",\
+        "packageDependencies": [\
+          ["@mui/icons-material", "npm:6.4.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6", {\
+        "packageLocation": "./.yarn/__virtual__/@mui-icons-material-virtual-14aa1c2b38/3/AppData/Local/Yarn/Berry/cache/@mui-icons-material-npm-6.4.6-c9b1a70b45-10c0.zip/node_modules/@mui/icons-material/",\
+        "packageDependencies": [\
+          ["@mui/icons-material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
+          ["@babel/runtime", "npm:7.26.9"],\
+          ["@mui/material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
+          ["@types/mui__material", null],\
+          ["@types/react", "npm:19.0.10"],\
+          ["react", "npm:19.0.0"]\
+        ],\
+        "packagePeers": [\
+          "@mui/material",\
+          "@types/mui__material",\
+          "@types/react",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -18497,6 +18525,7 @@ const RAW_RUNTIME_STATE =
           ["@emotion/react", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:11.14.0"],\
           ["@emotion/styled", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:11.14.0"],\
           ["@fontsource/roboto", "npm:5.1.1"],\
+          ["@mui/icons-material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/material", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/styled-engine-sc", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
           ["@mui/system", "virtual:81a1695bfb18f0157cecb210d185a2546f069ee5d799e1e8584285ae666c4bcb95ae030bed379d00a391562dcc8a1bfe61f580372d0311b1b7b74a9072476751#npm:6.4.6"],\
