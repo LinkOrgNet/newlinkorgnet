@@ -11,7 +11,19 @@ body, html{
   scroll-behavior: smooth;
 }
 
+.footer_subscribe{
+  background-image: url(/src/assets/images/fshape1.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: -40%;
+}
 
+.footer_contact{
+  background-image: url(/src/assets/images/fshape2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
 
 
 
